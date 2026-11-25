@@ -1,0 +1,93 @@
+======================================================================
+TABLEAU → STRATEGY MIGRATION INVENTORY
+======================================================================
+Source File:    examples/test_superstore.twb
+Tableau Version: 18.1
+Complexity:     Complex (score: 53)
+
+DATA SOURCES (1)
+----------------------------------------
+  • Sample - Superstore
+    Connection: sqlserver
+    Server:     sql-server.company.com
+    Database:   Superstore
+    Tables:     1
+    Columns:    24 (9 calculated)
+
+CALCULATED FIELDS (9)
+----------------------------------------
+  LOD Expressions (4):
+    • Customer Total Sales [FIXED]
+      { FIXED [Customer ID] : SUM([Sales]) }
+    • Category Avg Profit [INCLUDE]
+      { INCLUDE [Sub-Category] : AVG([Profit]) }
+    • Overall Sales (excl Region) [EXCLUDE]
+      { EXCLUDE [Region] : SUM([Sales]) }
+    • Top Customer Flag [FIXED]
+      IF { FIXED [Customer ID] : SUM([Sales]) } > 5000 THEN "Top Customer" ELSE "Regul...
+  Table Calculations (2):
+    • YoY Sales Growth
+      (ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Sales])), -1)) / ABS(LOOKUP(ZN(SUM([Sales])),...
+    • Running Total Sales
+      RUNNING_SUM(SUM([Sales]))
+  Standard Calculations (3):
+    • Profit Ratio: SUM([Profit]) / SUM([Sales])
+    • Sales per Customer: SUM([Sales]) / COUNTD([Customer ID])
+    • Profit Category: IF [Profit] > 0 THEN "Profitable" ELSEIF [Profit] = 0 THEN "...
+
+PARAMETERS (2)
+----------------------------------------
+  • Top N (integer)
+    Range: 5 → 50
+  • Metric Selector (string)
+    Values: "Sales", "Profit", "Quantity"
+
+WORKSHEETS (5)
+----------------------------------------
+  • Sales by Category
+    Mark Type:    Bar → Strategy: vertical_bar
+    Data Source:  Sample - Superstore
+    Rows:         Category
+    Columns:      sum:Sales:qk
+
+  • Sales Trend
+    Mark Type:    Line → Strategy: line
+    Data Source:  Sample - Superstore
+    Rows:         sum:Sales:qk
+    Columns:      yr:Order Date:ok
+    Encodings:    color=Category, tooltip=Profit
+
+  • Profit Map
+    Mark Type:    Map → Strategy: map
+    Data Source:  Sample - Superstore
+    Rows:         Latitude (generated
+    Columns:      Longitude (generated
+
+  • KPI Summary
+    Mark Type:    Text → Strategy: grid
+    Data Source:  Sample - Superstore
+    Columns:      sum:Profit:qk
+
+  • Detail Table
+    Mark Type:    Text → Strategy: grid
+    Data Source:  Sample - Superstore
+    Rows:         Sub-Category
+    Columns:      sum:Quantity:qk
+    Encodings:    text=sum:Sales:qk
+    Filters:      1
+
+DASHBOARDS (1)
+----------------------------------------
+  • Executive Overview (1400x900)
+    Viz Panels:   5
+    Filter Panels: 2
+
+STRATEGY MIGRATION RECOMMENDATIONS
+----------------------------------------
+  1. Found 9 calculated fields. Define these as metrics/attributes in Strategy's semantic layer for single-source-of-truth governance.
+  2. Found 4 LOD expressions. Strategy's metric dimensionality system handles these natively — define level metrics instead of per-report LODs.
+  3. Found 2 parameters. Convert to Strategy prompts or selectors for user-driven filtering.
+  4. Found 2 table calculations. These require OLAP functions or SQL window functions in Strategy. Review partitioning/addressing settings.
+
+
+JSON inventory written to: examples/test_superstore_inventory.json

@@ -1,0 +1,251 @@
+
+{
+    "registry_name": "Strategy Visualization Capability Registry",
+    "registry_version": "1.0",
+    "platform": "Strategy",
+    "verification_policy": "Documentation-listed capabilities must be verified in the target Strategy environment before execution.",
+    "visualizations": [
+        {
+            "id": "bar_chart",
+            "name": "Bar Chart",
+            "family": "bar",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Bar",
+                "Stacked Bar",
+                "Side-by-Side Bar"
+            ],
+            "notes": "Verify stacking, grouping, orientation and formatting options."
+        },
+        {
+            "id": "line_chart",
+            "name": "Line Chart",
+            "family": "line",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Line",
+                "Continuous Line"
+            ],
+            "notes": "Verify date axis, multiple series and formatting."
+        },
+        {
+            "id": "area_chart",
+            "name": "Area Chart",
+            "family": "area",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Area",
+                "Stacked Area"
+            ],
+            "notes": "Verify stacked area support in the target version."
+        },
+        {
+            "id": "dual_axis",
+            "name": "Dual-Axis Graph",
+            "family": "combo",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Dual Axis",
+                "Combo Chart"
+            ],
+            "notes": "Validate axis synchronization and metric configuration."
+        },
+        {
+            "id": "scatter_bubble",
+            "name": "Bubble or Scatter Chart",
+            "family": "scatter",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Scatter Plot",
+                "Packed Bubbles",
+                "Bubble Chart"
+            ],
+            "notes": "Validate X, Y, size and color field requirements."
+        },
+        {
+            "id": "pie_ring",
+            "name": "Pie or Ring Chart",
+            "family": "pie",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Pie",
+                "Donut"
+            ],
+            "notes": "Verify labels, percentage display and category limits."
+        },
+        {
+            "id": "heat_map",
+            "name": "Heat Map",
+            "family": "heatmap",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Heat Map",
+                "Highlight Table"
+            ],
+            "notes": "Verify color scale and field placement."
+        },
+        {
+            "id": "histogram",
+            "name": "Histogram",
+            "family": "histogram",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Histogram"
+            ],
+            "notes": "Verify binning and frequency calculation."
+        },
+        {
+            "id": "box_plot",
+            "name": "Box Plot",
+            "family": "distribution",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Box-and-Whisker Plot"
+            ],
+            "notes": "Verify quartiles, whiskers and outlier handling."
+        },
+        {
+            "id": "waterfall",
+            "name": "Waterfall",
+            "family": "waterfall",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Waterfall"
+            ],
+            "notes": "Validate running totals and positive/negative contributions."
+        },
+        {
+            "id": "kpi",
+            "name": "KPI",
+            "family": "kpi",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Text KPI",
+                "KPI"
+            ],
+            "notes": "Verify target, comparison and indicator configuration."
+        },
+        {
+            "id": "network",
+            "name": "Network",
+            "family": "network",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Network Graph"
+            ],
+            "notes": "Verify node and relationship data requirements."
+        },
+        {
+            "id": "sankey",
+            "name": "Sankey Diagram",
+            "family": "flow",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Sankey"
+            ],
+            "notes": "Verify source, destination and flow measure requirements."
+        },
+        {
+            "id": "time_series",
+            "name": "Time Series",
+            "family": "time_series",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Time Series"
+            ],
+            "notes": "Verify supported time dimensions and series options."
+        },
+        {
+            "id": "map_markers",
+            "name": "Map with Markers",
+            "family": "map",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Symbol Map",
+                "Circle Map"
+            ],
+            "notes": "Verify geographic roles and marker configuration."
+        },
+        {
+            "id": "map_areas",
+            "name": "Map with Areas",
+            "family": "map",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Filled Map",
+                "Choropleth Map"
+            ],
+            "notes": "Verify geographic boundary and area support."
+        },
+        {
+            "id": "map_density",
+            "name": "Map with Density Areas",
+            "family": "map",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Density Map"
+            ],
+            "notes": "Verify density and geographic data requirements."
+        },
+        {
+            "id": "grid",
+            "name": "Grid",
+            "family": "table",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Text Table",
+                "Crosstab"
+            ],
+            "notes": "Verify pivoting, sorting and formatting."
+        },
+        {
+            "id": "compound_grid",
+            "name": "Compound Grid",
+            "family": "table",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Text Table with Multiple Measures"
+            ],
+            "notes": "Verify compound grid capabilities."
+        },
+        {
+            "id": "modern_grid",
+            "name": "Modern Grid",
+            "family": "table",
+            "availability": "documented_native_candidate",
+            "custom_required": false,
+            "tableau_equivalents": [
+                "Text Table"
+            ],
+            "notes": "Verify modern grid availability and formatting."
+        },
+        {
+            "id": "custom_visualization",
+            "name": "Custom Visualization",
+            "family": "custom",
+            "availability": "requires_implementation",
+            "custom_required": true,
+            "tableau_equivalents": [],
+            "notes": "Requires a compatible custom visualization implementation and deployment."
+        }
+    ]
+}

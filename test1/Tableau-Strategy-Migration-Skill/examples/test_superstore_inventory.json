@@ -1,0 +1,669 @@
+{
+  "source_file": "examples/test_superstore.twb",
+  "tableau_version": "18.1",
+  "data_sources": [
+    {
+      "name": "federated.0abc123",
+      "caption": "Sample - Superstore",
+      "connection_class": "sqlserver",
+      "server": "sql-server.company.com",
+      "dbname": "Superstore",
+      "schema": "",
+      "tables": [
+        {
+          "name": "Orders",
+          "schema": "dbo",
+          "alias": "Orders",
+          "connection_type": "sqlserver"
+        }
+      ],
+      "joins": [],
+      "columns": [
+        {
+          "name": "Category",
+          "caption": "Category",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Region",
+          "caption": "Region",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "State",
+          "caption": "State",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": "[State].[Name]"
+        },
+        {
+          "name": "City",
+          "caption": "City",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Customer Name",
+          "caption": "Customer Name",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Customer ID",
+          "caption": "Customer ID",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Order Date",
+          "caption": "Order Date",
+          "datatype": "date",
+          "role": "dimension",
+          "type": "ordinal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Ship Date",
+          "caption": "Ship Date",
+          "datatype": "date",
+          "role": "dimension",
+          "type": "ordinal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Segment",
+          "caption": "Segment",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Ship Mode",
+          "caption": "Ship Mode",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Quantity",
+          "caption": "Quantity",
+          "datatype": "integer",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Discount",
+          "caption": "Discount",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "",
+          "default_aggregation": "",
+          "is_calculated": false,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_ProfitRatio",
+          "caption": "Profit Ratio",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "SUM([Profit]) / SUM([Sales])",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_SalesPerCustomer",
+          "caption": "Sales per Customer",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "SUM([Sales]) / COUNTD([Customer ID])",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_YoYGrowth",
+          "caption": "YoY Sales Growth",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "(ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Sales])), -1)) / ABS(LOOKUP(ZN(SUM([Sales])), -1))",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": false,
+          "is_table_calc": true,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_RunningTotal",
+          "caption": "Running Total Sales",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "RUNNING_SUM(SUM([Sales]))",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": false,
+          "is_table_calc": true,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_CustomerLOD",
+          "caption": "Customer Total Sales",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "{ FIXED [Customer ID] : SUM([Sales]) }",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": true,
+          "is_table_calc": false,
+          "lod_type": "FIXED",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_CategoryAvg",
+          "caption": "Category Avg Profit",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "{ INCLUDE [Sub-Category] : AVG([Profit]) }",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": true,
+          "is_table_calc": false,
+          "lod_type": "INCLUDE",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_ExclRegion",
+          "caption": "Overall Sales (excl Region)",
+          "datatype": "real",
+          "role": "measure",
+          "type": "quantitative",
+          "calculation": "{ EXCLUDE [Region] : SUM([Sales]) }",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": true,
+          "is_table_calc": false,
+          "lod_type": "EXCLUDE",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_ProfitCat",
+          "caption": "Profit Category",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "IF [Profit] > 0 THEN \"Profitable\" ELSEIF [Profit] = 0 THEN \"Break Even\" ELSE \"Loss\" END",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": false,
+          "is_table_calc": false,
+          "lod_type": "",
+          "hidden": false,
+          "semantic_role": ""
+        },
+        {
+          "name": "Calculation_TopCust",
+          "caption": "Top Customer Flag",
+          "datatype": "string",
+          "role": "dimension",
+          "type": "nominal",
+          "calculation": "IF { FIXED [Customer ID] : SUM([Sales]) } > 5000 THEN \"Top Customer\" ELSE \"Regular\" END",
+          "default_aggregation": "",
+          "is_calculated": true,
+          "is_lod": true,
+          "is_table_calc": false,
+          "lod_type": "FIXED",
+          "hidden": false,
+          "semantic_role": ""
+        }
+      ],
+      "parameters": [],
+      "custom_sql": "",
+      "is_extract": false
+    }
+  ],
+  "worksheets": [
+    {
+      "name": "Sales by Category",
+      "datasource": "federated.0abc123",
+      "datasource_caption": "Sample - Superstore",
+      "mark_type": "Bar",
+      "rows": [
+        "Category"
+      ],
+      "columns": [
+        "sum:Sales:qk"
+      ],
+      "encodings": [],
+      "filters": [],
+      "used_fields": [
+        "Category",
+        "Sales",
+        "Profit"
+      ],
+      "sort_fields": [],
+      "strategy_viz_type": "vertical_bar"
+    },
+    {
+      "name": "Sales Trend",
+      "datasource": "federated.0abc123",
+      "datasource_caption": "Sample - Superstore",
+      "mark_type": "Line",
+      "rows": [
+        "sum:Sales:qk"
+      ],
+      "columns": [
+        "yr:Order Date:ok"
+      ],
+      "encodings": [
+        {
+          "channel": "color",
+          "field": "Category",
+          "field_caption": "",
+          "type": ""
+        },
+        {
+          "channel": "tooltip",
+          "field": "Profit",
+          "field_caption": "",
+          "type": ""
+        }
+      ],
+      "filters": [],
+      "used_fields": [
+        "Order Date",
+        "Sales",
+        "Category"
+      ],
+      "sort_fields": [],
+      "strategy_viz_type": "line"
+    },
+    {
+      "name": "Profit Map",
+      "datasource": "federated.0abc123",
+      "datasource_caption": "Sample - Superstore",
+      "mark_type": "Map",
+      "rows": [
+        "Latitude (generated"
+      ],
+      "columns": [
+        "Longitude (generated"
+      ],
+      "encodings": [],
+      "filters": [],
+      "used_fields": [
+        "State",
+        "Profit"
+      ],
+      "sort_fields": [],
+      "strategy_viz_type": "map"
+    },
+    {
+      "name": "KPI Summary",
+      "datasource": "federated.0abc123",
+      "datasource_caption": "Sample - Superstore",
+      "mark_type": "Text",
+      "rows": [],
+      "columns": [
+        "sum:Profit:qk"
+      ],
+      "encodings": [],
+      "filters": [],
+      "used_fields": [
+        "Sales",
+        "Profit",
+        "Quantity",
+        "Calculation_ProfitRatio"
+      ],
+      "sort_fields": [],
+      "strategy_viz_type": "grid"
+    },
+    {
+      "name": "Detail Table",
+      "datasource": "federated.0abc123",
+      "datasource_caption": "Sample - Superstore",
+      "mark_type": "Text",
+      "rows": [
+        "Sub-Category"
+      ],
+      "columns": [
+        "sum:Quantity:qk"
+      ],
+      "encodings": [
+        {
+          "channel": "text",
+          "field": "sum:Sales:qk",
+          "field_caption": "",
+          "type": ""
+        }
+      ],
+      "filters": [
+        {
+          "field": "Region",
+          "field_caption": "",
+          "filter_type": "categorical",
+          "include_values": [
+            "East"
+          ],
+          "exclude_values": [],
+          "min_value": "",
+          "max_value": "",
+          "is_context_filter": false,
+          "scope": ""
+        }
+      ],
+      "used_fields": [
+        "Category",
+        "Sub-Category",
+        "Sales",
+        "Profit",
+        "Quantity",
+        "Calculation_ProfitRatio"
+      ],
+      "sort_fields": [],
+      "strategy_viz_type": "grid"
+    }
+  ],
+  "dashboards": [
+    {
+      "name": "Executive Overview",
+      "width": 1400,
+      "height": 900,
+      "zones": [
+        {
+          "name": "KPI Summary",
+          "zone_type": "viz",
+          "worksheet_ref": "KPI Summary",
+          "x": 0,
+          "y": 0,
+          "w": 1400,
+          "h": 150,
+          "grid_col_start": 1,
+          "grid_col_end": 12,
+          "grid_row_start": 1,
+          "grid_row_end": 2
+        },
+        {
+          "name": "Sales Trend",
+          "zone_type": "viz",
+          "worksheet_ref": "Sales Trend",
+          "x": 0,
+          "y": 150,
+          "w": 700,
+          "h": 350,
+          "grid_col_start": 1,
+          "grid_col_end": 7,
+          "grid_row_start": 2,
+          "grid_row_end": 4
+        },
+        {
+          "name": "Sales by Category",
+          "zone_type": "viz",
+          "worksheet_ref": "Sales by Category",
+          "x": 700,
+          "y": 150,
+          "w": 700,
+          "h": 350,
+          "grid_col_start": 7,
+          "grid_col_end": 12,
+          "grid_row_start": 2,
+          "grid_row_end": 4
+        },
+        {
+          "name": "Detail Table",
+          "zone_type": "viz",
+          "worksheet_ref": "Detail Table",
+          "x": 0,
+          "y": 500,
+          "w": 900,
+          "h": 400,
+          "grid_col_start": 1,
+          "grid_col_end": 9,
+          "grid_row_start": 4,
+          "grid_row_end": 6
+        },
+        {
+          "name": "Profit Map",
+          "zone_type": "viz",
+          "worksheet_ref": "Profit Map",
+          "x": 900,
+          "y": 500,
+          "w": 500,
+          "h": 400,
+          "grid_col_start": 9,
+          "grid_col_end": 12,
+          "grid_row_start": 4,
+          "grid_row_end": 6
+        },
+        {
+          "name": "Region Filter",
+          "zone_type": "filter",
+          "worksheet_ref": "Region Filter",
+          "x": 0,
+          "y": 120,
+          "w": 200,
+          "h": 30,
+          "grid_col_start": 1,
+          "grid_col_end": 3,
+          "grid_row_start": 2,
+          "grid_row_end": 2
+        },
+        {
+          "name": "Segment Filter",
+          "zone_type": "filter",
+          "worksheet_ref": "Segment Filter",
+          "x": 200,
+          "y": 120,
+          "w": 200,
+          "h": 30,
+          "grid_col_start": 3,
+          "grid_col_end": 4,
+          "grid_row_start": 2,
+          "grid_row_end": 2
+        }
+      ],
+      "actions": [],
+      "filters": []
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Parameter_TopN",
+      "caption": "Top N",
+      "datatype": "integer",
+      "current_value": "10",
+      "allowable_values": "range",
+      "value_list": [],
+      "range_min": "5",
+      "range_max": "50",
+      "range_step": "5"
+    },
+    {
+      "name": "Parameter_Metric",
+      "caption": "Metric Selector",
+      "datatype": "string",
+      "current_value": "Sales",
+      "allowable_values": "list",
+      "value_list": [
+        "\"Sales\"",
+        "\"Profit\"",
+        "\"Quantity\""
+      ],
+      "range_min": "",
+      "range_max": "",
+      "range_step": ""
+    }
+  ],
+  "complexity_score": 53,
+  "complexity_level": "Complex",
+  "migration_notes": [],
+  "strategy_recommendations": [
+    "Found 9 calculated fields. Define these as metrics/attributes in Strategy's semantic layer for single-source-of-truth governance.",
+    "Found 4 LOD expressions. Strategy's metric dimensionality system handles these natively \u2014 define level metrics instead of per-report LODs.",
+    "Found 2 parameters. Convert to Strategy prompts or selectors for user-driven filtering.",
+    "Found 2 table calculations. These require OLAP functions or SQL window functions in Strategy. Review partitioning/addressing settings."
+  ]
+}
