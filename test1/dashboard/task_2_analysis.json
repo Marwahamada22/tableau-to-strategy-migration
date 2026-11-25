@@ -1,0 +1,203 @@
+{
+    "tool": "Tableau Visualization Rule-Based Analyzer",
+    "version": "1.0",
+    "total_worksheets": 11,
+    "summary": {
+        "ANALYSIS_REQUIRED": 7,
+        "EXPLICIT_TYPE": 4
+    },
+    "analysis": [
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Low",
+            "confidence_score": 0.55,
+            "rule": "GEOGRAPHIC_DIMENSION_WITH_MEASURE",
+            "alternative_candidates": [
+                "Map"
+            ],
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 1 dimension field(s).",
+                "Geographic-looking dimension(s) found: State"
+            ],
+            "warnings": [
+                "A geographic field does not prove that the original visualization is a map.",
+                "Verify Tableau geographic roles and mark configuration before selecting a map."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": " sum sales in every state",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Medium",
+            "confidence_score": 0.65,
+            "rule": "DIMENSION_WITH_MEASURE",
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 2 dimension field(s).",
+                "Categorical dimension(s) and measure(s) were found on Tableau shelves.",
+                "A Bar Chart is a possible visualization for this field arrangement."
+            ],
+            "warnings": [
+                "The shelf arrangement alone cannot prove that the original chart is a Bar Chart.",
+                "Check encodings, mark details and the original Tableau visualization."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "Sales by Category and Sub-Category",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "worksheet_name": "Sheet 13",
+            "original_mark_type": "Bar",
+            "predicted_chart_type": "Bar",
+            "confidence": "High",
+            "confidence_score": 1.0,
+            "rule": "EXPLICIT_TABLEAU_MARK",
+            "evidence": [
+                "Tableau explicitly defines the mark type as 'Bar'."
+            ],
+            "warnings": [],
+            "decision": "EXPLICIT_TYPE"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Medium",
+            "confidence_score": 0.65,
+            "rule": "DIMENSION_WITH_MEASURE",
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 1 dimension field(s).",
+                "Categorical dimension(s) and measure(s) were found on Tableau shelves.",
+                "A Bar Chart is a possible visualization for this field arrangement."
+            ],
+            "warnings": [
+                "The shelf arrangement alone cannot prove that the original chart is a Bar Chart.",
+                "Check encodings, mark details and the original Tableau visualization."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "Sheet 3",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Medium",
+            "confidence_score": 0.65,
+            "rule": "DIMENSION_WITH_MEASURE",
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 1 dimension field(s).",
+                "Categorical dimension(s) and measure(s) were found on Tableau shelves.",
+                "A Bar Chart is a possible visualization for this field arrangement."
+            ],
+            "warnings": [
+                "The shelf arrangement alone cannot prove that the original chart is a Bar Chart.",
+                "Check encodings, mark details and the original Tableau visualization."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "Sheet 4",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "worksheet_name": "Sheet 5",
+            "original_mark_type": "Bar",
+            "predicted_chart_type": "Bar",
+            "confidence": "High",
+            "confidence_score": 1.0,
+            "rule": "EXPLICIT_TABLEAU_MARK",
+            "evidence": [
+                "Tableau explicitly defines the mark type as 'Bar'."
+            ],
+            "warnings": [],
+            "decision": "EXPLICIT_TYPE"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Low",
+            "confidence_score": 0.55,
+            "rule": "GEOGRAPHIC_DIMENSION_WITH_MEASURE",
+            "alternative_candidates": [
+                "Map"
+            ],
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 2 dimension field(s).",
+                "Geographic-looking dimension(s) found: Country"
+            ],
+            "warnings": [
+                "A geographic field does not prove that the original visualization is a map.",
+                "Verify Tableau geographic roles and mark configuration before selecting a map."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "profit by category",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "worksheet_name": "profit with ship mode",
+            "original_mark_type": "Bar",
+            "predicted_chart_type": "Bar",
+            "confidence": "High",
+            "confidence_score": 1.0,
+            "rule": "EXPLICIT_TABLEAU_MARK",
+            "evidence": [
+                "Tableau explicitly defines the mark type as 'Bar'."
+            ],
+            "warnings": [],
+            "decision": "EXPLICIT_TYPE"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Low",
+            "confidence_score": 0.55,
+            "rule": "GEOGRAPHIC_DIMENSION_WITH_MEASURE",
+            "alternative_candidates": [
+                "Map"
+            ],
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 1 dimension field(s).",
+                "Geographic-looking dimension(s) found: Region"
+            ],
+            "warnings": [
+                "A geographic field does not prove that the original visualization is a map.",
+                "Verify Tableau geographic roles and mark configuration before selecting a map."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "region and profit",
+            "original_mark_type": "Automatic"
+        },
+        {
+            "worksheet_name": "sub category and sales",
+            "original_mark_type": "Bar",
+            "predicted_chart_type": "Bar",
+            "confidence": "High",
+            "confidence_score": 1.0,
+            "rule": "EXPLICIT_TABLEAU_MARK",
+            "evidence": [
+                "Tableau explicitly defines the mark type as 'Bar'."
+            ],
+            "warnings": [],
+            "decision": "EXPLICIT_TYPE"
+        },
+        {
+            "predicted_chart_type": "Bar",
+            "confidence": "Medium",
+            "confidence_score": 0.65,
+            "rule": "DIMENSION_WITH_MEASURE",
+            "evidence": [
+                "Found 1 measure field(s).",
+                "Found 1 dimension field(s).",
+                "Categorical dimension(s) and measure(s) were found on Tableau shelves.",
+                "A Bar Chart is a possible visualization for this field arrangement."
+            ],
+            "warnings": [
+                "The shelf arrangement alone cannot prove that the original chart is a Bar Chart.",
+                "Check encodings, mark details and the original Tableau visualization."
+            ],
+            "decision": "ANALYSIS_REQUIRED",
+            "worksheet_name": "sum order by category",
+            "original_mark_type": "Automatic"
+        }
+    ],
+    "warning": "Predictions are rule-based candidates, not confirmed original Tableau chart types. Validate before migration."
+}

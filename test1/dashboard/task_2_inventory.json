@@ -1,0 +1,1335 @@
+{
+    "source_file": "dashboard\\task_2.twbx",
+    "tableau_version": "18.1",
+    "data_sources": [
+        {
+            "name": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "caption": "Sample - Superstore",
+            "connection_type": "federated",
+            "fields": [
+                {
+                    "name": "Row ID",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Mode",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Segment",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Country",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "City",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "State",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Postal Code",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sub-Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sales",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Quantity",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Discount",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Profit",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sheet",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Table Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Row ID",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Mode",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Segment",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Country",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "City",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "State",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Postal Code",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sub-Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sales",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Quantity",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Discount",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Profit",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Person",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Returned",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Calculation_775463619417047042",
+                    "caption": "Profit ratio",
+                    "datatype": "real",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "Category (group) 1",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Category (group)",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "City",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Country",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Customer Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Discount",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Postal Code",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "dimension",
+                    "type": "ordinal"
+                },
+                {
+                    "name": "Product Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Profit (bin)",
+                    "caption": "Profit (bin)",
+                    "datatype": "integer",
+                    "role": "dimension",
+                    "type": "ordinal"
+                },
+                {
+                    "name": "Profit",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "Row ID",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "dimension",
+                    "type": "ordinal"
+                },
+                {
+                    "name": "Sales (bin)",
+                    "caption": "Sales (bin)",
+                    "datatype": "integer",
+                    "role": "dimension",
+                    "type": "ordinal"
+                },
+                {
+                    "name": "Sales",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "State",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Sub-Category (group)",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Sub-Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "__tableau_internal_object_id__].[Orders_E26946882EC74433BDCF32CCDB597367",
+                    "caption": "Orders",
+                    "datatype": "table",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "__tableau_internal_object_id__].[People_6B7F4C170C38434D9DBF9484E8CF38F6",
+                    "caption": "People",
+                    "datatype": "table",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "__tableau_internal_object_id__].[Returns_D43DFC8D85204B349FEFF7A10EFEA9BD",
+                    "caption": "Returns",
+                    "datatype": "table",
+                    "role": "measure",
+                    "type": "quantitative"
+                },
+                {
+                    "name": "ctg",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "dimension",
+                    "type": "nominal"
+                },
+                {
+                    "name": "Row ID",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Mode",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Segment",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Country",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "City",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "State",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Postal Code",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sub-Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sales",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Quantity",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Discount",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Profit",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sheet",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Table Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Row ID",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Date",
+                    "caption": "",
+                    "datatype": "date",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Ship Mode",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Customer Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Segment",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Country",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "City",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "State",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Postal Code",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sub-Category",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Product Name",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Sales",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Quantity",
+                    "caption": "",
+                    "datatype": "integer",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Discount",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Profit",
+                    "caption": "",
+                    "datatype": "real",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Person",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Region",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Returned",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "name": "Order ID",
+                    "caption": "",
+                    "datatype": "string",
+                    "role": "",
+                    "type": ""
+                }
+            ]
+        }
+    ],
+    "worksheets": [
+        {
+            "name": " sum sales in every state",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Sales"
+            ],
+            "columns": [
+                "State"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Sales",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Sales:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "State",
+                    "aggregation": "none",
+                    "raw_reference": "none:State:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:State:nk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Sales",
+                "State"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "Sales by Category and Sub-Category",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Sub-Category",
+                "Category"
+            ],
+            "columns": [
+                "Sales"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Sub-Category",
+                    "aggregation": "none",
+                    "raw_reference": "none:Sub-Category:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Sub-Category:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk])"
+                },
+                {
+                    "field": "Category",
+                    "aggregation": "none",
+                    "raw_reference": "none:Category:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Sub-Category:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk])"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Sales",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Sales:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Category",
+                "Sales",
+                "Sub-Category"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "Sheet 13",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Bar",
+            "rows": [
+                "Profit"
+            ],
+            "columns": [
+                "Ship Mode",
+                "Sub-Category Set"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Profit",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Profit:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Profit:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Ship Mode",
+                    "aggregation": "none",
+                    "raw_reference": "none:Ship Mode:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Ship Mode:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[io:Sub-Category Set:nk])"
+                },
+                {
+                    "field": "Sub-Category Set",
+                    "aggregation": "io",
+                    "raw_reference": "io:Sub-Category Set:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Ship Mode:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[io:Sub-Category Set:nk])"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Profit",
+                "Ship Mode",
+                "Sub-Category",
+                "Sub-Category Set"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "bar"
+        },
+        {
+            "name": "Sheet 3",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Sales"
+            ],
+            "columns": [
+                "Sub-Category"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Sales",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Sales:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Sub-Category",
+                    "aggregation": "none",
+                    "raw_reference": "none:Sub-Category:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Sub-Category:nk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [
+                {
+                    "name": "",
+                    "field": "Sales",
+                    "class_type": "quantitative",
+                    "column": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "used_fields": [
+                "Sales",
+                "Sub-Category"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "Sheet 4",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Customer Name Set"
+            ],
+            "columns": [
+                "Sales"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Customer Name Set",
+                    "aggregation": "io",
+                    "raw_reference": "io:Customer Name Set:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[io:Customer Name Set:nk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Sales",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Sales:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Category",
+                "Customer Name",
+                "Sales",
+                "Customer Name Set"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "Sheet 5",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Bar",
+            "rows": [
+                "Profit"
+            ],
+            "columns": [
+                "City Set"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Profit",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Profit:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Profit:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "City Set",
+                    "aggregation": "io",
+                    "raw_reference": "io:City Set:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[io:City Set:nk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Category",
+                "City",
+                "Profit",
+                "City Set"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "bar"
+        },
+        {
+            "name": "profit by category",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Profit"
+            ],
+            "columns": [
+                "Country",
+                "Category"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Profit",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Profit:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Profit:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Country",
+                    "aggregation": "none",
+                    "raw_reference": "none:Country:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Country:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk])"
+                },
+                {
+                    "field": "Category",
+                    "aggregation": "none",
+                    "raw_reference": "none:Category:nk",
+                    "raw_expression": "([federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Country:nk] / [federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk])"
+                }
+            ],
+            "encodings": [
+                {
+                    "channel": "color",
+                    "field": "Category",
+                    "type": ""
+                }
+            ],
+            "filters": [],
+            "used_fields": [
+                "Category",
+                "Country",
+                "Profit"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "profit with ship mode",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Bar",
+            "rows": [
+                "Profit"
+            ],
+            "columns": [
+                "Ship Mode"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Profit",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Profit:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Profit:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Ship Mode",
+                    "aggregation": "none",
+                    "raw_reference": "none:Ship Mode:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Ship Mode:nk]"
+                }
+            ],
+            "encodings": [
+                {
+                    "channel": "lod",
+                    "field": "Sub-Category (group)",
+                    "type": ""
+                }
+            ],
+            "filters": [
+                {
+                    "name": "",
+                    "field": "Sub-Category (group)",
+                    "class_type": "categorical",
+                    "column": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[Sub-Category (group)]"
+                }
+            ],
+            "used_fields": [
+                "Profit",
+                "Ship Mode",
+                "Sub-Category (group)",
+                "Sub-Category"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "bar"
+        },
+        {
+            "name": "region and profit",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Profit"
+            ],
+            "columns": [
+                "Region"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Profit",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Profit:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Profit:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Region",
+                    "aggregation": "none",
+                    "raw_reference": "none:Region:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Region:nk]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Profit",
+                "Region"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        },
+        {
+            "name": "sub category and sales",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Bar",
+            "rows": [
+                "Sales"
+            ],
+            "columns": [
+                "Sub-Category"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Sales",
+                    "aggregation": "sum",
+                    "raw_reference": "sum:Sales:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[sum:Sales:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Sub-Category",
+                    "aggregation": "none",
+                    "raw_reference": "none:Sub-Category:nk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Sub-Category:nk]"
+                }
+            ],
+            "encodings": [
+                {
+                    "channel": "lod",
+                    "field": "Sub-Category Set",
+                    "type": ""
+                }
+            ],
+            "filters": [],
+            "used_fields": [
+                "Sales",
+                "Sub-Category",
+                "Sub-Category Set"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "bar"
+        },
+        {
+            "name": "sum order by category",
+            "datasource": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "datasource_caption": "Sample - Superstore",
+            "mark_type": "Automatic",
+            "rows": [
+                "Orders_E26946882EC74433BDCF32CCDB597367"
+            ],
+            "columns": [
+                "Category (group)"
+            ],
+            "row_shelf": [
+                {
+                    "field": "Orders_E26946882EC74433BDCF32CCDB597367",
+                    "aggregation": "cnt",
+                    "raw_reference": "cnt:Orders_E26946882EC74433BDCF32CCDB597367:qk",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[__tableau_internal_object_id__].[cnt:Orders_E26946882EC74433BDCF32CCDB597367:qk]"
+                }
+            ],
+            "column_shelf": [
+                {
+                    "field": "Category (group)",
+                    "aggregation": "",
+                    "raw_reference": "Category (group)",
+                    "raw_expression": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[Category (group)]"
+                }
+            ],
+            "encodings": [],
+            "filters": [],
+            "used_fields": [
+                "Category (group)",
+                "Category",
+                "__tableau_internal_object_id__].[Orders_E26946882EC74433BDCF32CCDB597367",
+                "Orders_E26946882EC74433BDCF32CCDB597367"
+            ],
+            "sort_fields": [],
+            "strategy_viz_type": "auto"
+        }
+    ],
+    "dashboards": [
+        {
+            "name": "sales dashboard",
+            "worksheets": [
+                "profit by category",
+                "profit with ship mode",
+                " sum sales in every state",
+                "region and profit",
+                "sum order by category",
+                "sub category and sales",
+                "Sales by Category and Sub-Category"
+            ],
+            "objects": []
+        }
+    ],
+    "parameters": [],
+    "complexity_score": 39,
+    "complexity_level": "Medium",
+    "migration_notes": [],
+    "strategy_recommendations": [
+        "Worksheet ' sum sales in every state': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'Sales by Category and Sub-Category': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'Sheet 13': Candidate Strategy visualization is 'bar'. Verify availability in the target environment.",
+        "Worksheet 'Sheet 3': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'Sheet 4': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'Sheet 5': Candidate Strategy visualization is 'bar'. Verify availability in the target environment.",
+        "Worksheet 'profit by category': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'profit with ship mode': Candidate Strategy visualization is 'bar'. Verify availability in the target environment.",
+        "Worksheet 'region and profit': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization.",
+        "Worksheet 'sub category and sales': Candidate Strategy visualization is 'bar'. Verify availability in the target environment.",
+        "Worksheet 'sum order by category': Tableau mark type is Automatic. Analyze shelves and encodings before choosing a Strategy visualization."
+    ]
+}

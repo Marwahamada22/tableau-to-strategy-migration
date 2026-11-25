@@ -1,0 +1,1077 @@
+{
+  "source": ".\\dashboard\\task_2.twbx",
+  "dataset": null,
+  "worksheets": [
+    {
+      "name": " sum sales in every state",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [
+          "map_areas"
+        ],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "State",
+          "caption": "State",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "[State].[Name]",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "State",
+          "caption": "State",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "[State].[Name]",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "Sales by Category and Sub-Category",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "horizontal",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Category",
+          "caption": "Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "columns": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Category",
+          "caption": "Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "Sheet 13",
+      "tableau_mark": "Bar",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "high",
+        "rule": "EXPLICIT_MARK_Bar",
+        "alternatives": []
+      },
+      "status": "READY_TO_BUILD",
+      "rows": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Ship Mode",
+          "caption": "Ship Mode",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Sub-Category Set",
+          "caption": "Sub-Category Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Ship Mode",
+          "caption": "Ship Mode",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Sub-Category Set",
+          "caption": "Sub-Category Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "Sheet 3",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": [
+        {
+          "field": "Sales",
+          "caption": "Sales",
+          "type": "quantitative",
+          "mode": "all_values_interactive",
+          "members": [],
+          "min": null,
+          "max": "40149.693000000014"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 4",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "kpi",
+        "orientation": null,
+        "confidence": "medium",
+        "rule": "SINGLE_MEASURE",
+        "alternatives": [],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Customer Name Set",
+          "caption": "Customer Name Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "set",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "columns": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Customer Name Set",
+          "caption": "Customer Name Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "set",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "Sheet 5",
+      "tableau_mark": "Bar",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "high",
+        "rule": "EXPLICIT_MARK_Bar",
+        "alternatives": []
+      },
+      "status": "READY_TO_BUILD",
+      "rows": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "City Set",
+          "caption": "City Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "set",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "City Set",
+          "caption": "City Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "set",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "profit by category",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [
+          "map_areas"
+        ],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Country",
+          "caption": "Country",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "[Country].[ISO3166_2]",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Category",
+          "caption": "Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [
+        {
+          "strategy_slot": "color_by",
+          "tableau_channel": "color",
+          "name": "Category",
+          "caption": "Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "dimensions": [
+        {
+          "name": "Country",
+          "caption": "Country",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "[Country].[ISO3166_2]",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "name": "Category",
+          "caption": "Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "profit with ship mode",
+      "tableau_mark": "Bar",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "high",
+        "rule": "EXPLICIT_MARK_Bar",
+        "alternatives": []
+      },
+      "status": "READY_TO_BUILD",
+      "rows": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Ship Mode",
+          "caption": "Ship Mode",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [
+        {
+          "strategy_slot": "break_by",
+          "tableau_channel": "lod",
+          "name": "Sub-Category (group)",
+          "caption": "Sub-Category (group)",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "dimensions": [
+        {
+          "name": "Ship Mode",
+          "caption": "Ship Mode",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "strategy_slot": "break_by",
+          "tableau_channel": "lod",
+          "name": "Sub-Category (group)",
+          "caption": "Sub-Category (group)",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": [
+        {
+          "field": "Sub-Category (group)",
+          "caption": "Sub-Category (group)",
+          "type": "categorical",
+          "mode": "include",
+          "members": [
+            "Accessories, Art, Chairs and 5 more"
+          ],
+          "min": null,
+          "max": null
+        }
+      ]
+    },
+    {
+      "name": "region and profit",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Region",
+          "caption": "Region",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Region",
+          "caption": "Region",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Profit",
+          "caption": "Profit",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "sub category and sales",
+      "tableau_mark": "Bar",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "high",
+        "rule": "EXPLICIT_MARK_Bar",
+        "alternatives": []
+      },
+      "status": "READY_TO_BUILD",
+      "rows": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [
+        {
+          "strategy_slot": "break_by",
+          "tableau_channel": "lod",
+          "name": "Sub-Category Set",
+          "caption": "Sub-Category Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "dimensions": [
+        {
+          "name": "Sub-Category",
+          "caption": "Sub-Category",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "field",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        },
+        {
+          "strategy_slot": "break_by",
+          "tableau_channel": "lod",
+          "name": "Sub-Category Set",
+          "caption": "Sub-Category Set",
+          "role": "dimension",
+          "aggregation": "SET",
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Sales",
+          "caption": "Sales",
+          "role": "measure",
+          "aggregation": "SUM",
+          "kind": "field",
+          "datatype": "real",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "sum order by category",
+      "tableau_mark": "Automatic",
+      "viz": {
+        "viz_id": "bar_chart",
+        "orientation": "vertical",
+        "confidence": "medium",
+        "rule": "DIMENSION_WITH_MEASURE",
+        "alternatives": [],
+        "has_date": false
+      },
+      "status": "MANUAL_REVIEW",
+      "rows": [
+        {
+          "name": "Orders (record count)",
+          "caption": "Count of Orders",
+          "role": "measure",
+          "aggregation": "COUNT",
+          "kind": "record_count",
+          "datatype": "integer",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "columns": [
+        {
+          "name": "Category (group)",
+          "caption": "Category (group)",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "encodings": [],
+      "dimensions": [
+        {
+          "name": "Category (group)",
+          "caption": "Category (group)",
+          "role": "dimension",
+          "aggregation": null,
+          "kind": "group",
+          "datatype": "string",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Orders (record count)",
+          "caption": "Count of Orders",
+          "role": "measure",
+          "aggregation": "COUNT",
+          "kind": "record_count",
+          "datatype": "integer",
+          "semantic_role": "",
+          "formula": "",
+          "continuous": true
+        }
+      ],
+      "filters": []
+    }
+  ],
+  "dashboards": [
+    {
+      "dashboard": "sales dashboard",
+      "size_px": [
+        3000,
+        7000
+      ],
+      "grid": "12 columns x 47 rows (end exclusive)",
+      "zones": [
+        {
+          "kind": "text",
+          "name": "",
+          "param": null,
+          "col_start": 1,
+          "col_end": 12,
+          "row_start": 1,
+          "row_end": 5
+        },
+        {
+          "kind": "legend",
+          "name": "profit by category",
+          "param": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk]",
+          "col_start": 12,
+          "col_end": 13,
+          "row_start": 1,
+          "row_end": 7
+        },
+        {
+          "kind": "viz",
+          "name": "profit with ship mode",
+          "param": null,
+          "col_start": 1,
+          "col_end": 9,
+          "row_start": 4,
+          "row_end": 17
+        },
+        {
+          "kind": "viz",
+          "name": " sum sales in every state",
+          "param": null,
+          "col_start": 6,
+          "col_end": 9,
+          "row_start": 31,
+          "row_end": 48
+        },
+        {
+          "kind": "viz",
+          "name": "profit by category",
+          "param": null,
+          "col_start": 1,
+          "col_end": 4,
+          "row_start": 16,
+          "row_end": 30
+        },
+        {
+          "kind": "viz",
+          "name": "region and profit",
+          "param": null,
+          "col_start": 3,
+          "col_end": 7,
+          "row_start": 17,
+          "row_end": 32
+        },
+        {
+          "kind": "viz",
+          "name": "sum order by category",
+          "param": null,
+          "col_start": 6,
+          "col_end": 9,
+          "row_start": 18,
+          "row_end": 32
+        },
+        {
+          "kind": "viz",
+          "name": "sub category and sales",
+          "param": null,
+          "col_start": 4,
+          "col_end": 6,
+          "row_start": 31,
+          "row_end": 48
+        },
+        {
+          "kind": "viz",
+          "name": "Sales by Category and Sub-Category",
+          "param": null,
+          "col_start": 1,
+          "col_end": 4,
+          "row_start": 30,
+          "row_end": 48
+        },
+        {
+          "kind": "text",
+          "name": "",
+          "param": null,
+          "col_start": 1,
+          "col_end": 12,
+          "row_start": 1,
+          "row_end": 5
+        },
+        {
+          "kind": "viz",
+          "name": "profit with ship mode",
+          "param": null,
+          "col_start": 1,
+          "col_end": 9,
+          "row_start": 4,
+          "row_end": 17
+        },
+        {
+          "kind": "viz",
+          "name": "profit by category",
+          "param": null,
+          "col_start": 1,
+          "col_end": 4,
+          "row_start": 16,
+          "row_end": 30
+        },
+        {
+          "kind": "legend",
+          "name": "profit by category",
+          "param": "[federated.03d6zag0t54yhj1bedfwi1p8ylxj].[none:Category:nk]",
+          "col_start": 12,
+          "col_end": 13,
+          "row_start": 1,
+          "row_end": 7
+        },
+        {
+          "kind": "viz",
+          "name": "region and profit",
+          "param": null,
+          "col_start": 3,
+          "col_end": 7,
+          "row_start": 17,
+          "row_end": 32
+        },
+        {
+          "kind": "viz",
+          "name": "sum order by category",
+          "param": null,
+          "col_start": 6,
+          "col_end": 9,
+          "row_start": 18,
+          "row_end": 32
+        },
+        {
+          "kind": "viz",
+          "name": "Sales by Category and Sub-Category",
+          "param": null,
+          "col_start": 1,
+          "col_end": 4,
+          "row_start": 30,
+          "row_end": 48
+        },
+        {
+          "kind": "viz",
+          "name": " sum sales in every state",
+          "param": null,
+          "col_start": 6,
+          "col_end": 9,
+          "row_start": 31,
+          "row_end": 48
+        },
+        {
+          "kind": "viz",
+          "name": "sub category and sales",
+          "param": null,
+          "col_start": 4,
+          "col_end": 6,
+          "row_start": 31,
+          "row_end": 48
+        }
+      ],
+      "skipped_zone_types": {
+        "layout-basic": 3,
+        "layout-flow": 4
+      }
+    }
+  ]
+}

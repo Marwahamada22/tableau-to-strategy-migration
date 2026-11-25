@@ -1,0 +1,378 @@
+{
+    "input_file": "task_2_inventory.json",
+    "migration_tool": "Generic Tableau-to-Strategy Mapper",
+    "total_mapped_objects": 40,
+    "summary": {
+        "Dataset / Cube": 1,
+        "Logical Table": 3,
+        "Derived Metric": 1,
+        "Derived Attribute": 6,
+        "Attribute": 10,
+        "Metric": 5,
+        "Visualization": 11,
+        "Filter / Selector": 2,
+        "Dossier": 1
+    },
+    "mappings": [
+        {
+            "source_name": "federated.03d6zag0t54yhj1bedfwi1p8ylxj",
+            "source_type": "Data Source",
+            "strategy_target": "Dataset / Cube",
+            "source_path": "$.data_sources[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Orders$",
+            "source_type": "Table",
+            "strategy_target": "Logical Table",
+            "source_path": "$.data_sources[0].tables[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "People$",
+            "source_type": "Table",
+            "strategy_target": "Logical Table",
+            "source_path": "$.data_sources[0].tables[1]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Returns$",
+            "source_type": "Table",
+            "strategy_target": "Logical Table",
+            "source_path": "$.data_sources[0].tables[2]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Calculation_775463619417047042",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Metric",
+            "source_path": "$.data_sources[0].columns[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: real."
+        },
+        {
+            "source_name": "Category (group) 1",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[1]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Calculation formula is missing. Source data type: string."
+        },
+        {
+            "source_name": "Category (group)",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[2]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Calculation formula is missing. Source data type: string."
+        },
+        {
+            "source_name": "Category",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[3]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "City",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[4]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Country",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[5]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Customer Name",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[6]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Discount",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[7]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Postal Code",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[8]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: integer."
+        },
+        {
+            "source_name": "Product Name",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[9]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Profit (bin)",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[10]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: integer."
+        },
+        {
+            "source_name": "Profit",
+            "source_type": "Measure",
+            "strategy_target": "Metric",
+            "source_path": "$.data_sources[0].columns[11]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: real."
+        },
+        {
+            "source_name": "Row ID",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[12]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: integer."
+        },
+        {
+            "source_name": "Sales (bin)",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[13]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: integer."
+        },
+        {
+            "source_name": "Sales",
+            "source_type": "Measure",
+            "strategy_target": "Metric",
+            "source_path": "$.data_sources[0].columns[14]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: real."
+        },
+        {
+            "source_name": "State",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[15]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "Sub-Category (group)",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[16]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Calculation formula is missing. Source data type: string."
+        },
+        {
+            "source_name": "Sub-Category",
+            "source_type": "Dimension",
+            "strategy_target": "Attribute",
+            "source_path": "$.data_sources[0].columns[17]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Source data type: string."
+        },
+        {
+            "source_name": "__tableau_internal_object_id__].[Orders_E26946882EC74433BDCF32CCDB597367",
+            "source_type": "Measure",
+            "strategy_target": "Metric",
+            "source_path": "$.data_sources[0].columns[18]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: table."
+        },
+        {
+            "source_name": "__tableau_internal_object_id__].[People_6B7F4C170C38434D9DBF9484E8CF38F6",
+            "source_type": "Measure",
+            "strategy_target": "Metric",
+            "source_path": "$.data_sources[0].columns[19]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: table."
+        },
+        {
+            "source_name": "__tableau_internal_object_id__].[Returns_D43DFC8D85204B349FEFF7A10EFEA9BD",
+            "source_type": "Measure",
+            "strategy_target": "Metric",
+            "source_path": "$.data_sources[0].columns[20]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Aggregation rule needs validation. Source data type: table."
+        },
+        {
+            "source_name": "ctg",
+            "source_type": "Calculated Field",
+            "strategy_target": "Derived Attribute",
+            "source_path": "$.data_sources[0].columns[21]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Calculation formula is missing. Source data type: string."
+        },
+        {
+            "source_name": " sum sales in every state",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Sales by Category and Sub-Category",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[1]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Sheet 13",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[2]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Sheet 3",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[3]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Filter",
+            "source_type": "Filter",
+            "strategy_target": "Filter / Selector",
+            "source_path": "$.worksheets[3].filters[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Sheet 4",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[4]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Sheet 5",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[5]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "profit by category",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[6]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "profit with ship mode",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[7]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "Filter",
+            "source_type": "Filter",
+            "strategy_target": "Filter / Selector",
+            "source_path": "$.worksheets[7].filters[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "region and profit",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[8]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "sub category and sales",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[9]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "sum order by category",
+            "source_type": "Worksheet",
+            "strategy_target": "Visualization",
+            "source_path": "$.worksheets[10]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        },
+        {
+            "source_name": "sales dashboard",
+            "source_type": "Dashboard",
+            "strategy_target": "Dossier",
+            "source_path": "$.dashboards[0]",
+            "status": "Needs review",
+            "confidence": "Medium",
+            "notes": "Verify extracted metadata before migration."
+        }
+    ]
+}

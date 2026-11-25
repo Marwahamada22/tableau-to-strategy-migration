@@ -1,0 +1,101 @@
+{
+    "tool": "Tableau-to-Strategy Visualization Matcher",
+    "input_inventory": "task_2_inventory.json",
+    "registry": "strategy_visualization_capabilities.json",
+    "total_worksheets": 11,
+    "summary": {
+        "MANUAL_REVIEW": 7,
+        "REUSE": 4
+    },
+    "matches": [
+        {
+            "worksheet_name": " sum sales in every state",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "Sales by Category and Sub-Category",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "Sheet 13",
+            "tableau_chart_type": "Bar",
+            "strategy_visualization": "Bar Chart",
+            "decision": "REUSE",
+            "confidence": "High",
+            "reason": "A documented native Strategy visualization matches the Tableau chart type. Verify it in the target environment."
+        },
+        {
+            "worksheet_name": "Sheet 3",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "Sheet 4",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "Sheet 5",
+            "tableau_chart_type": "Bar",
+            "strategy_visualization": "Bar Chart",
+            "decision": "REUSE",
+            "confidence": "High",
+            "reason": "A documented native Strategy visualization matches the Tableau chart type. Verify it in the target environment."
+        },
+        {
+            "worksheet_name": "profit by category",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "profit with ship mode",
+            "tableau_chart_type": "Bar",
+            "strategy_visualization": "Bar Chart",
+            "decision": "REUSE",
+            "confidence": "High",
+            "reason": "A documented native Strategy visualization matches the Tableau chart type. Verify it in the target environment."
+        },
+        {
+            "worksheet_name": "region and profit",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        },
+        {
+            "worksheet_name": "sub category and sales",
+            "tableau_chart_type": "Bar",
+            "strategy_visualization": "Bar Chart",
+            "decision": "REUSE",
+            "confidence": "High",
+            "reason": "A documented native Strategy visualization matches the Tableau chart type. Verify it in the target environment."
+        },
+        {
+            "worksheet_name": "sum order by category",
+            "tableau_chart_type": null,
+            "strategy_visualization": null,
+            "decision": "MANUAL_REVIEW",
+            "confidence": "Low",
+            "reason": "The inventory does not contain a reliable chart type. More Tableau metadata is required."
+        }
+    ],
+    "warning": "Documented native capabilities must be verified in the target Strategy environment. REUSE does not mean that an existing chart instance is automatically reused."
+}
